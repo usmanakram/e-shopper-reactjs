@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import logo from "../logo.png";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   state = {};
@@ -15,14 +16,14 @@ class Header extends Component {
                 <div className="contactinfo">
                   <ul className="nav nav-pills">
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <i className="fa fa-phone"></i> +2 95 01 88 821
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <i className="fa fa-envelope"></i> info@domain.com
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -31,29 +32,29 @@ class Header extends Component {
                 <div className="social-icons pull-right">
                   <ul className="nav navbar-nav">
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <i className="fa fa-facebook"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <i className="fa fa-twitter"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <i className="fa fa-linkedin"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <i className="fa fa-dribbble"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <i className="fa fa-google-plus"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -69,9 +70,9 @@ class Header extends Component {
             <div className="row">
               <div className="col-sm-4">
                 <div className="logo pull-left">
-                  <a href="index.html">
+                  <Link to="/home">
                     <img src={logo} alt="" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="btn-group pull-right">
                   <div className="btn-group">
@@ -85,10 +86,10 @@ class Header extends Component {
                     </button>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="#">Canada</a>
+                        <Link to="#">Canada</Link>
                       </li>
                       <li>
-                        <a href="#">UK</a>
+                        <Link to="#">UK</Link>
                       </li>
                     </ul>
                   </div>
@@ -104,10 +105,10 @@ class Header extends Component {
                     </button>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="#">Canadian Dollar</a>
+                        <Link to="#">Canadian Dollar</Link>
                       </li>
                       <li>
-                        <a href="#">Pound</a>
+                        <Link to="#">Pound</Link>
                       </li>
                     </ul>
                   </div>
@@ -117,29 +118,29 @@ class Header extends Component {
                 <div className="shop-menu pull-right">
                   <ul className="nav navbar-nav">
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <i className="fa fa-user"></i> Account
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link to="#">
                         <i className="fa fa-star"></i> Wishlist
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="checkout.html">
+                      <Link to="/checkout">
                         <i className="fa fa-crosshairs"></i> Checkout
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="cart.html">
+                      <Link to="/cart">
                         <i className="fa fa-shopping-cart"></i> Cart
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="login.html">
+                      <Link to="/login">
                         <i className="fa fa-lock"></i> Login
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -170,50 +171,50 @@ class Header extends Component {
                 <div className="mainmenu pull-left">
                   <ul className="nav navbar-nav collapse navbar-collapse">
                     <li>
-                      <a href="index.html" className="active">
+                      <Link to="/home" className="active">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="dropdown">
-                      <a href="#">
+                      <Link to="#">
                         Shop<i className="fa fa-angle-down"></i>
-                      </a>
+                      </Link>
                       <ul role="menu" className="sub-menu">
                         <li>
-                          <a href="shop.html">Products</a>
+                          <Link to="/shop">Products</Link>
                         </li>
                         <li>
-                          <a href="product-details.html">Product Details</a>
+                          <Link to="/product-details">Product Details</Link>
                         </li>
                         <li>
-                          <a href="checkout.html">Checkout</a>
+                          <Link to="/checkout">Checkout</Link>
                         </li>
                         <li>
-                          <a href="cart.html">Cart</a>
+                          <Link to="/cart">Cart</Link>
                         </li>
                         <li>
-                          <a href="login.html">Login</a>
+                          <Link to="/login">Login</Link>
                         </li>
                       </ul>
                     </li>
                     <li className="dropdown">
-                      <a href="#">
+                      <Link to="#">
                         Blog<i className="fa fa-angle-down"></i>
-                      </a>
+                      </Link>
                       <ul role="menu" className="sub-menu">
                         <li>
-                          <a href="blog.html">Blog List</a>
+                          <Link to="/blog">Blog List</Link>
                         </li>
                         <li>
-                          <a href="blog-single.html">Blog Single</a>
+                          <Link to="/blog-single">Blog Single</Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <a href="404.html">404</a>
+                      <Link to="/404">404</Link>
                     </li>
                     <li>
-                      <a href="contact-us.html">Contact</a>
+                      <Link to="/contact-us">Contact</Link>
                     </li>
                   </ul>
                 </div>
